@@ -22,11 +22,28 @@ Commit your code regularly and meaningfully.
 
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
-1. How would you describe acessibility on the web to someone new to programming?
+1. How would you describe accessibility on the web to someone new to programming?
+
+    Accessibility on the web- it's important to remember that just like programs, everyone is built differently. We want the widest audience of people to be able to access and use our creations and that can't happen if they can't interact with it the only way possible for them. So we need to make sure our code is semantic enough for screen readers to tell people with visual impairments what's going on, we need to make sure the colors we choose are accessible to individuals who use different colors on their monitors, we need to make sure that our text can scale so that people who need to increase font size can do that, we also need to make sure our site looks good no matter what screen size is being used. If we don't do those things we're cutting off a huge number of people from our products.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+    Ensure your HTML is as semantic as possible- using tags like address, h1-h6, p etc as opposed to calling everything as a div
+    Ensure that you use scalable measurement in your CSS files- rems and % as opposed to px
+    Include a meta tag in your HTML so that the browser reading your code can properly scale it
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    Variables are essentially the building blocks of everything we code. They're what we use to store values so that you can reference them at any point in your code. Everything is a variable. Your name is a variable which stores the 'value' of yourself. If someone wanted to talk to you, they use your name, your variable. It lets you know that you're expected to respond in some manner.
+
 4. What is the purpose of using functions in code?
+
+    Functions allow you to write a rule for a block of code without actually having it do anything until the function itself is called. They let you apply the same rule to any variable that has the arguments needed to fill the parameters set by the function, as opposed to writing the same block of code for every variable in your dataset.
+
 5. How do you access a key inside of an object inside of an array?
+
+    Dot Notation - array[index].object.key 
+    Bracket Notation -  array[index].object['key'] (must be used if the key name has a space present)
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
