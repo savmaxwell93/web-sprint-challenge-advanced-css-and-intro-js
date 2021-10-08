@@ -247,16 +247,21 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  //  let twenties = [];
-  //  for(i = 0; i < array.length; i++){
-  //    if(array[i].year.includes('2000')){
-  //      twenties.push(array[i].name)
-  //    }
-  //   }
-  // return twenties //should have names
+    let twenties = [];
+    let yearStrings = [];
+    for(let i = 0; i < array.length; i++){ //loop through the array
+      yearStrings.push(array[i].years.split(' - '));//split the years into individual strings and push to a new array
+    }
+    for(let i = 0; i < yearStrings.length; i++){
+      //if(array[i].year is between 1900 and 2000
+      if((yearStrings[i][0].charAt(0) === '1' && yearStrings[i][0].charAt(1) === '9') || (yearStrings[i][0].charAt(0) === '2' && yearStrings[i][0].charAt(1) === '0')){
+        twenties.push(array[i].name);//push those names to new array
+      }
+     }
+   return twenties //returns the names of the artists
 }
 
-// console.log(get20s(artists));
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -304,7 +309,7 @@ function addArtist(array) {
   return array;
 }
 
-console.log(addArtist(artists));
+//console.log(addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
